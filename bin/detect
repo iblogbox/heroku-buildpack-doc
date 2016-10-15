@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "doc"
+exit 0
