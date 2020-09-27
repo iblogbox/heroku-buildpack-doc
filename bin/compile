@@ -19,7 +19,7 @@ echo "-----> Installing Kindlegen"
 mkdir -p $BIN_DIR
 
 echo Vendoring $URL | indent
-curl -s $URL | tar -xz -C $KINDLEGEN_DIR
+curl --silent --location $URL | tar -xz -C $KINDLEGEN_DIR
 
 echo Moving binary | indent
 mv $KINDLEGEN_DIR/kindlegen $BIN_DIR/
